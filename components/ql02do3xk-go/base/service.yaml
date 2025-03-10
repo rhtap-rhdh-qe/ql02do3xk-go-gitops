@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ql02do3xk-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ql02do3xk-go 
+  name: ql02do3xk-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ql02do3xk-go 
